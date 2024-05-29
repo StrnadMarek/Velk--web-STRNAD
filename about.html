@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O kachnách divokých</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <button class="main-nav__toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">Domů</a></li>
+                <li class="main-nav__item"><a href="about.html" class="main-nav__link">O kachnách</a></li>
+            </ul>
+        </nav>
+        <div class="main-header__content">
+            <h1 class="main-header__title">O kachnách divokých</h1>
+        </div>
+    </header>
+    <main class="content">
+        <section class="content__section">
+            <h2 class="content__title">O kachnách divokých</h2>
+            <p class="content__text">Kachny divoké (Anas platyrhynchos) jsou jedním z nejznámějších druhů vodních ptáků, kteří se nacházejí téměř po celém světě. Jsou známé svou schopností přizpůsobit se různým prostředím, od městských parků po odlehlé oblasti.</p>
+            <article class="content__article">
+                <h3 class="content__article-title">Rozmnožování</h3>
+                <p class="content__article-text">Kachny divoké se rozmnožují na jaře. Samice staví hnízda z trávy a peří, často v blízkosti vody. Klade obvykle 8-12 vajec, která inkubuje přibližně 28 dní.</p>
+            </article>
+            <article class="content__article">
+                <h3 class="content__article-title">Migrace</h3>
+                <p class="content__article-text">Mnoho kachen divokých migruje na dlouhé vzdálenosti mezi hnízdními a zimovacími oblastmi. Některé populace jsou stálé, ale většina migruje na jih na zimu, kde je teplejší klima a dostupnost potravy.</p>
+            </article>
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img src="images/duck2.jpg" alt="Kachna divoká 1">
+                </div>
+                <div class="gallery__item">
+                    <img src="images/duck3.jpg" alt="Kachna divoká 2">
+                </div>
+                <div class="gallery__item">
+                    <img src="images/duck4.jpg" alt="Kachna divoká 3">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Zdroj obrázků a textu: <a href="https://commons.wikimedia.org" class="footer__link" target="_blank"><i class="fas fa-external-link-alt"></i> Wikimedia Commons</a></p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navToggle = document.querySelector('.main-nav__toggle');
+            var navList = document.querySelector('.main-nav__list');
+            
+            navToggle.addEventListener('click', function() {
+                navList.classList.toggle('main-nav__list--open');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kachny divoké</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <button class="main-nav__toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">Domů</a></li>
+                <li class="main-nav__item"><a href="about.html" class="main-nav__link">O kachnách</a></li>
+            </ul>
+        </nav>
+        <div class="main-header__content">
+            <h1 class="main-header__title">Kachny divoké</h1>
+            <p class="main-header__subtitle">Krása a elegance přírody</p>
+        </div>
+    </header>
+    <main class="content">
+        <section class="content__section">
+            <h2 class="content__title">Vítejte na stránkách o kachnách divokých</h2>
+            <p class="content__text">Kachny divoké jsou fascinující ptáci, kteří obývají různé vodní plochy po celém světě...</p>
+            <article class="content__article">
+                <h3 class="content__article-title">Habitat</h3>
+                <p class="content__article-text">Kachny divoké žijí v blízkosti sladkovodních ploch, jako jsou jezera, řeky a rybníky...</p>
+            </article>
+            <article class="content__article">
+                <h3 class="content__article-title">Strava</h3>
+                <p class="content__article-text">Kachny divoké se živí širokou škálou potravy včetně rostlin, hmyzu a malých ryb...</p>
+            </article>
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img src="images/duck2.jpg" alt="Kachna divoká 1">
+                </div>
+                <div class="gallery__item">
+                    <img src="images/duck3.jpg" alt="Kachna divoká 2">
+                </div>
+                <div class="gallery__item">
+                    <img src="images/duck4.jpg" alt="Kachna divoká 3">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Zdroj obrázků a textu: <a href="https://commons.wikimedia.org / https://chatgpt.com/" class="footer__link" target="_blank"><i class="fas fa-external-link-alt"></i> Wikimedia Commons</a></p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navToggle = document.querySelector('.main-nav__toggle');
+            var navList = document.querySelector('.main-nav__list');
+            
+            navToggle.addEventListener('click', function() {
+                navList.classList.toggle('main-nav__list--open');
+            });
+        });
+    </script>
+</body>
+</html>
