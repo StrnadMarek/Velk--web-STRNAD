@@ -215,7 +215,7 @@ p {
 
 @media (max-width: 768px) {
     .main-nav {
-        position: relative;
+        position: auto;
     }
 
     .main-nav__toggle {
